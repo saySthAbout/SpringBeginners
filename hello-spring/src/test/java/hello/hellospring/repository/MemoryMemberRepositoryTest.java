@@ -26,7 +26,7 @@ class MemoryMemberRepositoryTest {
         repository.save(member);
 
         Member result = repository.findById(member.getId()).get();
-        assertThat(member).isEqualTo(result); // 실무에서는 이거를 빌드 툴이랑 엮는다.
+        assertThat (member).isEqualTo(result); // 실무에서는 이거를 빌드 툴이랑 엮는다.
     }
 
     @Test
